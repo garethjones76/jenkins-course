@@ -10,7 +10,7 @@ node {
   // job
   try {
     stage('build') {
-      println('so far so good...')
+      println('so far so good....')
     }
     stage('test') {
       println('A test has failed!')
