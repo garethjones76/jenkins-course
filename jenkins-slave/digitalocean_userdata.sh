@@ -5,7 +5,7 @@ apt-get update
 apt-get install -y docker-engine
 systemctl enable docker
 mkdir -p /var/jenkins_home/.ssh
-cp /root/.ssh/authorized_keys /var/jenkins_home/.ssh/authorized_keys
+cp /home/ubuntu/.ssh/authorized_keys /var/jenkins_home/.ssh/authorized_keys
 chmod 700 /var/jenkins_home/.ssh
 chmod 600 /var/jenkins_home/.ssh/authorized_keys
 chown -R 1000:1000 /var/jenkins_home
