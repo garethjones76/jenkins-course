@@ -8,7 +8,7 @@ node(label: 'builder') {
    stage('test') {
      nodejs(nodeJSInstallationName: 'nodejs') {
        sh 'npm install'
-       sh 'npm init'
+       sh 'npm init -y'
        sh 'npm test'
      }
    }
